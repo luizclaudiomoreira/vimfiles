@@ -44,5 +44,5 @@ nnoremap <Leader>c :CtrlP app/controllers<CR>
 nnoremap <Leader>i :CtrlP app/assets/javascripts<CR>
 nnoremap <Leader>y :CtrlP app/assets/stylesheets<CR>
 nnoremap <Leader>js :CtrlP spec<CR>
-nnoremap <Leader>jf :CtrlP factories<CR>
+nnoremap <Leader>jf :CtrlP features<CR>
 
