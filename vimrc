@@ -13,10 +13,10 @@ endif
 
 " ================ General ====================
 
+set wrap
 set title
 set ruler                                       " Show the cursor position all the time
 set hidden
-set nowrap
 set mouse=a
 set showcmd                                     " Show incomplete cmds down the bottom
 set autoread                                    " Reload files changed outside vim
@@ -46,6 +46,9 @@ set wildmode=list:longest
 set backspace=indent,eol,start                  " Intuitive backspacing in insert mode
 set list listchars=tab:»·,trail:·               " Display extra whitespace
 set tabstop=2 shiftwidth=2 softtabstop=2        " Tab size
+set splitbelow                                  " Open new split panes to right and bottom, which feels more natural (from: thoughtbot/dotfiles/blob/master/vimrc)
+set splitright
+
 
 filetype on
 filetype off
@@ -70,7 +73,7 @@ noremap <left>  :echoerr 'Use H to go left'<CR>
 noremap <right> :echoerr 'Use L to go right'<CR>
 
 " No highlight search
-nmap <silent> <leader>n :silent :nohlsearch<CR>
+nmap <silent> <leader>no :silent :nohlsearch<CR>
 
 " Edit and Reload vimfiles
 map <Leader>ev :sp ~/.vimrc<cr>
@@ -95,6 +98,17 @@ map <Leader>rub :!rubocop %<cr>
 map <Leader>auto :!rubocop -a %<cr>
 map <Leader>S :w<cr>:call RunCurrentTest()<CR>
 map <Leader>s :w<cr>:call RunCurrentLineInTest()<CR>
+
+" Exclude Javascript files in :Rtags via rails.vim due to warnings when parsing (from: thoughtbot/dotfiles/blob/master/vimrc)
+let g:Tlist_Ctags_Cmd="ctags --exclude='*.js'"
+
+" Index ctags from any project, including those outside Rails (from: thoughtbot/dotfiles/blob/master/vimrc)
+map <Leader>ct :!ctags -R .<CR>
+
+" Switch between the last two files (from: thoughtbot/dotfiles/blob/master/vimrc)
+nnoremap <leader><leader> <c-^>
+
+nnoremap <Leader>gs :Gstatus<CR>
 
 so ~/.vim/settings.vim
 so ~/.vim/functions.vim
