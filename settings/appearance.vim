@@ -11,7 +11,7 @@ if has("gui_running")
   set t_Co=256
 
   if has("gui_mac") || has("gui_macvim")
-    set guifont=Monaco:h15
+    set guifont=Monaco:h13
     set transparency=5
     set fullscreen
   endif
