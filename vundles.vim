@@ -20,3 +20,4 @@ Bundle 'slim-template/vim-slim'
 Bundle "terryma/vim-multiple-cursors"
 Bundle "altercation/vim-colors-solarized"
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'scrooloose/nerdtree'

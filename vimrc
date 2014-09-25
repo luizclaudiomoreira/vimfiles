@@ -110,5 +110,7 @@ nnoremap <leader><leader> <c-^>
 
 nnoremap <Leader>gs :Gstatus<CR>
 
+nnoremap <Leader>k :NERDTreeToggle<CR>
+
 so ~/.vim/settings.vim
 so ~/.vim/functions.vim
