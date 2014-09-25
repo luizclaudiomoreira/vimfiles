@@ -103,7 +103,11 @@ map <Leader>s :w<cr>:call RunCurrentLineInTest()<CR>
 let g:Tlist_Ctags_Cmd="ctags --exclude='*.js'"
 
 " Index ctags from any project, including those outside Rails (from: thoughtbot/dotfiles/blob/master/vimrc)
-map <Leader>ct :!ctags -R .<CR>
+if has("gui_macvim") && has("gui_running")
+  map <Leader>ct :!/usr/local/bin/ctags -R .<CR>
+else
+  map <Leader>ct :!ctags -R .<CR>
+endif
 
 " Switch between the last two files (from: thoughtbot/dotfiles/blob/master/vimrc)
 nnoremap <leader><leader> <c-^>
