@@ -57,8 +57,8 @@ syntax   enable
 
 
 " ================ Key mappings ====================
-let mapleader   = ","
-let g:mapleader = ","
+let mapleader   = "	"
+let g:mapleader = "	"
 
 " Quit with q
 map <Leader>q :q<CR>
