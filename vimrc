@@ -55,6 +55,7 @@ filetype off
 filetype plugin indent on
 syntax   enable
 
+au BufNewFile,BufRead *.god set filetype=ruby
 
 " ================ Key mappings ====================
 let mapleader   = " "
