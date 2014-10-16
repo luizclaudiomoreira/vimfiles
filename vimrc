@@ -38,7 +38,8 @@ set scrolloff=3
 set textwidth=140
 set history=1000                                " Store lots of :cmdline history
 set laststatus=2                                " Always show status line.
-set relativenumber                              " Line numbers are good
+" set relativenumber                              " Line numbers are good
+set number
 set formatoptions=n
 set backupdir=~/.vim/tmp
 set directory=~/.vim/tmp
