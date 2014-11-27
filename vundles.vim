@@ -17,7 +17,9 @@ Bundle 'tpope/vim-rails'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'kien/ctrlp.vim'
 Bundle 'slim-template/vim-slim'
+Bundle 'kchmck/vim-coffee-script'
 Bundle "terryma/vim-multiple-cursors"
 Bundle "altercation/vim-colors-solarized"
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdtree'
+Bundle 'wakatime/vim-wakatime'
