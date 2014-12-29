@@ -21,6 +21,3 @@ set background=dark
 if isdirectory(expand("~/.vim/bundle/vim-colors-solarized/.git"))
   colorscheme solarized
 endif
-if isdirectory(expand("~/.vim/bundle/vim-powerline/.git"))
-  let g:Powerline_symbols = 'fancy'
-endif
