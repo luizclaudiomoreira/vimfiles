@@ -38,8 +38,8 @@ set scrolloff=3
 set textwidth=140
 set history=1000                                " Store lots of :cmdline history
 set laststatus=2                                " Always show status line.
-" set relativenumber                              " Line numbers are good
-set number
+set relativenumber                              " Line numbers are good
+" set number
 set formatoptions=n
 set backupdir=~/.vim/tmp
 set directory=~/.vim/tmp
@@ -49,6 +49,8 @@ set list listchars=tab:»·,trail:·               " Display extra whitespace
 set tabstop=2 shiftwidth=2 softtabstop=2        " Tab size
 set splitbelow                                  " Open new split panes to right and bottom, which feels more natural (from: thoughtbot/dotfiles/blob/master/vimrc)
 set splitright
+
+autocmd Filetype gitcommit setlocal spell textwidth=72
 
 
 filetype on
