@@ -17,7 +17,7 @@ set wrap
 set title
 set ruler                                       " Show the cursor position all the time
 set hidden
-set mouse=a
+" set mouse=a
 set showcmd                                     " Show incomplete cmds down the bottom
 set autoread                                    " Reload files changed outside vim
 set showmode                                    " Show current mode down the bottom
@@ -39,7 +39,7 @@ set textwidth=140
 set history=1000                                " Store lots of :cmdline history
 set laststatus=2                                " Always show status line.
 set relativenumber                              " Line numbers are good
-" set number
+set number
 set formatoptions=n
 set backupdir=~/.vim/tmp
 set directory=~/.vim/tmp
