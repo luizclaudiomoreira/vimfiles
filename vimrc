@@ -41,8 +41,8 @@ set laststatus=2                                " Always show status line.
 set relativenumber                              " Line numbers are good
 set number
 set formatoptions=n
-set backupdir=~/.vim/tmp
-set directory=~/.vim/tmp
+" set backupdir=~/.vim/tmp
+" set directory=~/.vim/tmp
 set wildmode=list:longest
 set backspace=indent,eol,start                  " Intuitive backspacing in insert mode
 set list listchars=tab:»·,trail:·               " Display extra whitespace
