@@ -61,6 +61,7 @@ set linespace=-1
 set go-=T
 set foldenable
 set mousehide
+set mouse=a
 set dictionary+=~/.vim/dict.txt
 
 autocmd Filetype gitcommit setlocal spell textwidth=72

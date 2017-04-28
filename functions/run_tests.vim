@@ -10,7 +10,7 @@ function! RunCurrentTest()
       call SetTestRunner("cucumber")
       exec '!clear &&' g:bjo_test_runner g:bjo_test_file
     elseif match(expand('%'), '_spec\.rb$') != -1
-      call SetTestRunner("rspec --color --format documentation")
+      call SetTestRunner("spring rspec --color --format documentation")
       exec '!clear &&' g:bjo_test_runner g:bjo_test_file
     endif
   else
@@ -32,7 +32,7 @@ function! RunCurrentLineInTest()
     call SetTestFileWithLine()
   end
 
-  exec "!clear && rspec --color --format documentation " g:bjo_test_file . ":" . g:bjo_test_file_line
+  exec "!clear && spring rspec --color --format documentation " g:bjo_test_file . ":" . g:bjo_test_file_line
 endfunction
 
 function! SetTestFile()
