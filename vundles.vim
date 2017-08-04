@@ -22,8 +22,9 @@ Bundle "terryma/vim-multiple-cursors"
 Bundle "altercation/vim-colors-solarized"
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdtree'
-Bundle 'elixir-lang/vim-elixir'
 Bundle 'slashmili/alchemist.vim'
 Bundle 'junegunn/vim-emoji'
 Bundle 'junegunn/vim-easy-align'
+Bundle 'janko-m/vim-test'
+Bundle 'elixir-lang/vim-elixir'
 " Bundle 'wakatime/vim-wakatime'

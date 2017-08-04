@@ -69,6 +69,8 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 
 
 au BufNewFile,BufRead *.god set filetype=ruby
+au BufNewFile,BufRead *.ex set filetype=elixir
+au BufNewFile,BufRead *.exs set filetype=elixir
 
 " ================ Key mappings ====================
 let mapleader   = " "
@@ -116,8 +118,10 @@ nnoremap <silent> <C-j> <C-w>j
 " Tests and StyleGuides (from: fellipebrito/dotfiles)
 map <Leader>rub :!rubocop %<cr>
 map <Leader>auto :!rubocop -a %<cr>
-map <Leader>S :w<cr>:call RunCurrentTest()<CR>
-map <Leader>s :w<cr>:call RunCurrentLineInTest()<CR>
+" map <Leader>S :w<cr>:call RunCurrentTest()<CR>
+" map <Leader>s :w<cr>:call RunCurrentLineInTest()<CR>
+nmap <silent> <leader>s :TestNearest<CR>
+nmap <silent> <leader>S :TestFile<CR>
 
 " Exclude Javascript files in :Rtags via rails.vim due to warnings when parsing (from: thoughtbot/dotfiles/blob/master/vimrc)
 let g:Tlist_Ctags_Cmd="rm tags && ctags --exclude='*.js'"
