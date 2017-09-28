@@ -39,9 +39,11 @@ set incsearch                                   " Highlight search terms dynamic
 set autowrite
 set expandtab                                   " Tab for spaces
 set cursorline                                  " Highlight current line
+set cursorcolumn
+hi CursorLine cterm=none
+set lazyredraw
 set ignorecase
 set smartcase
-set visualbell                                  " No sounds
 set autoindent                                  " Always set autoindenting on
 set shiftround                                  " When at 3 spaces and I hit >>, go to 4, not 5.
 set smartindent
@@ -63,6 +65,11 @@ set foldenable
 set mousehide
 set mouse=a
 set dictionary+=~/.vim/dict.txt
+set noshowmatch
+set clipboard=unnamed
+set novisualbell
+set noerrorbells
+set belloff=all
 
 autocmd Filetype gitcommit setlocal spell textwidth=72
 
@@ -71,6 +78,7 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 au BufNewFile,BufRead *.god set filetype=ruby
 au BufNewFile,BufRead *.ex set filetype=elixir
 au BufNewFile,BufRead *.exs set filetype=elixir
+au BufNewFile,BufRead *.eex set filetype=html
 
 " ================ Key mappings ====================
 let mapleader   = " "
@@ -122,6 +130,7 @@ map <Leader>auto :!rubocop -a %<cr>
 " map <Leader>s :w<cr>:call RunCurrentLineInTest()<CR>
 nmap <silent> <leader>s :TestNearest<CR>
 nmap <silent> <leader>S :TestFile<CR>
+let test#ruby#rspec#executable = 'spring rspec'
 
 " Exclude Javascript files in :Rtags via rails.vim due to warnings when parsing (from: thoughtbot/dotfiles/blob/master/vimrc)
 let g:Tlist_Ctags_Cmd="rm tags && ctags --exclude='*.js'"
@@ -144,3 +153,6 @@ nnoremap <Leader>k :NERDTreeToggle<CR>
 
 so ~/.vim/settings.vim
 so ~/.vim/functions.vim
+
+let g:syntastic_javascript_checkers=['eslint']
+let g:syntastic_javascript_eslint_exe='$(npm bin)/eslint'

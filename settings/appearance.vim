@@ -11,13 +11,16 @@ if has("gui_running")
   set t_Co=256
 
   if has("gui_mac") || has("gui_macvim")
-    set guifont=Monaco:h13
+    set guifont=Monaco:h12
     set transparency=5
     set fullscreen
   endif
-endif
-set background=dark
 
-if isdirectory(expand("~/.vim/bundle/vim-colors-solarized/.git"))
-  colorscheme solarized
+  " if isdirectory(expand("~/.vim/bundle/vim-colors-solarized/.git"))
+  "   colorscheme solarized
+  " endif
+else
+  set termguicolors
 endif
+
+set background=dark
