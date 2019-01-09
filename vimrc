@@ -2,7 +2,6 @@
 " Maintained by: Luiz Claudio Moreira Junior
 " talkto@luizclaudiomoreira.com
 " http://luizclaudiomoreira.com
-"
 
 scriptencoding utf-8
 set encoding=utf-8
@@ -13,7 +12,6 @@ filetype plugin on
 filetype indent on
 syntax   on
 
-
 " ================ Plugins ====================
 silent! runtime macros/matchit.vim
 silent! runtime vundles.vim
@@ -21,9 +19,7 @@ if filereadable('vundles.local')
   silent! runtime vundles.local
 endif
 
-
 " ================ General ====================
-
 set wrap
 set title
 set ruler                                       " Show the cursor position all the time
@@ -122,15 +118,6 @@ nnoremap <silent> <C-h> <C-w>h
 nnoremap <silent> <C-l> <C-w>l
 nnoremap <silent> <C-k> <C-w>k
 nnoremap <silent> <C-j> <C-w>j
-
-" Tests and StyleGuides (from: fellipebrito/dotfiles)
-map <Leader>rub :!rubocop %<cr>
-map <Leader>auto :!rubocop -a %<cr>
-" map <Leader>S :w<cr>:call RunCurrentTest()<CR>
-" map <Leader>s :w<cr>:call RunCurrentLineInTest()<CR>
-nmap <silent> <leader>s :TestNearest<CR>
-nmap <silent> <leader>S :TestFile<CR>
-let test#ruby#rspec#executable = 'spring rspec'
 
 " Exclude Javascript files in :Rtags via rails.vim due to warnings when parsing (from: thoughtbot/dotfiles/blob/master/vimrc)
 let g:Tlist_Ctags_Cmd="rm tags && ctags --exclude='*.js'"
