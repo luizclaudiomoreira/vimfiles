@@ -34,9 +34,9 @@ set showmatch
 set incsearch                                   " Highlight search terms dynamically as they are typed.
 set autowrite
 set expandtab                                   " Tab for spaces
-set cursorline                                  " Highlight current line
-set cursorcolumn
-hi CursorLine cterm=none
+" set cursorline                                  " Highlight current line
+" set cursorcolumn
+" hi CursorLine cterm=none
 set lazyredraw
 set ignorecase
 set smartcase
@@ -46,7 +46,7 @@ set smartindent
 set scrolloff=3
 set laststatus=2                                " Always show status line.
 set timeoutlen=500
-set relativenumber                              " Line numbers are good
+" set relativenumber                              " Line numbers are good
 set number
 set formatoptions=qrn1
 set wildmode=list:longest
