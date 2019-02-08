@@ -37,6 +37,7 @@ set expandtab                                   " Tab for spaces
 " set cursorline                                  " Highlight current line
 " set cursorcolumn
 " hi CursorLine cterm=none
+set colorcolumn=120
 set lazyredraw
 set ignorecase
 set smartcase
@@ -136,7 +137,24 @@ nnoremap <Leader>gs :Gstatus<CR>
 
 nnoremap <Leader>k :NERDTreeToggle<CR>
 
-" autocmd BufEnter * cd %:p:h
+" Syntax and Rubocop
+" let g:vimrubocop_config = '/path/to/rubocop.yml'
+let g:vimrubocop_keymap = 0
+nmap <Leader>r :RuboCop<CR>
+
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+" let g:syntastic_ruby_checkers = ['rubocop']
+
+" rspec
+map <Leader>s :call RunCurrentSpecFile()<CR>
+" map <Leader>s :call RunNearestSpec()<CR>
+" map <Leader>l :call RunLastSpec()<CR>
+" map <Leader>a :call RunAllSpecs()<CR>
+let g:rspec_command = "Dispatch rspec {spec}"
 
 so ~/.vim/settings.vim
 so ~/.vim/functions.vim
