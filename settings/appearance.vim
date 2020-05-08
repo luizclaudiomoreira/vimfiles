@@ -16,11 +16,12 @@ if has("gui_running")
     set fullscreen
   endif
 
-  " if isdirectory(expand("~/.vim/bundle/vim-colors-solarized/.git"))
-  "   colorscheme solarized
-  " endif
+  if isdirectory(expand("~/.vim/bundle/vim-colors-solarized/.git"))
+    colorscheme solarized
+  endif
 else
   set termguicolors
 endif
 
 set background=dark
+colorscheme solarized

@@ -34,8 +34,8 @@ set showmatch
 set incsearch                                   " Highlight search terms dynamically as they are typed.
 set autowrite
 set expandtab                                   " Tab for spaces
-" set cursorline                                  " Highlight current line
-" set cursorcolumn
+set cursorline                                  " Highlight current line
+set cursorcolumn
 " hi CursorLine cterm=none
 set colorcolumn=120
 set lazyredraw
@@ -78,8 +78,8 @@ au BufNewFile,BufRead *.exs set filetype=elixir
 au BufNewFile,BufRead *.eex set filetype=html
 
 " ================ Key mappings ====================
-let mapleader   = " "
-let g:mapleader = " "
+let mapleader   = ""
+let g:mapleader = ","
 
 " Quit with q
 map <Leader>q :q<CR>
