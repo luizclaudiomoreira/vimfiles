@@ -79,7 +79,7 @@ au BufNewFile,BufRead *.eex set filetype=html
 
 " ================ Key mappings ====================
 let mapleader   = ""
-let g:mapleader = ","
+let g:mapleader = " "
 
 " Quit with q
 map <Leader>q :q<CR>

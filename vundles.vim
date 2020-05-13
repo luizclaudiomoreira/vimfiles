@@ -20,6 +20,7 @@ Bundle 'slim-template/vim-slim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle "terryma/vim-multiple-cursors"
 Bundle "altercation/vim-colors-solarized"
+Bundle "morhetz/gruvbox"
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
@@ -32,8 +33,8 @@ Bundle 'Chiel92/vim-autoformat'
 Bundle 'thoughtbot/vim-rspec'
 " Bundle 'vim-syntastic/syntastic'
 Bundle 'ngmy/vim-rubocop'
-" Bundle 'wakatime/vim-wakatime'
+Bundle 'wakatime/vim-wakatime'
 
 " PHP/Wordpress
-Plugin 'dsawardekar/wordpress.vim'
-Plugin 'StanAngeloff/php.vim'
+" Plugin 'dsawardekar/wordpress.vim'
+" Plugin 'StanAngeloff/php.vim'

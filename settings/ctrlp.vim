@@ -35,14 +35,13 @@ nnoremap <C-P> :ClearCtrlPCache<cr>
 " Idea from : http://www.charlietanksley.net/blog/blog/2011/10/18/vim-navigation-with-lustyexplorer-and-lustyjuggler/
 " Open CtrlP starting from a particular path<Leader> making it much
 " more likely to find the correct thing first. mnemonic 'jump to [something]'
-nnoremap <Leader>a :CtrlP app<CR>
-nnoremap <Leader>l :CtrlP lib<CR>
-nnoremap <Leader>n :CtrlP models<CR>
-nnoremap <Leader>v :CtrlP app/views<CR>
-nnoremap <Leader>m :CtrlP app/models<CR>
-nnoremap <Leader>c :CtrlP app/controllers<CR>
-nnoremap <Leader>i :CtrlP app/assets/javascripts<CR>
-nnoremap <Leader>y :CtrlP app/assets/stylesheets<CR>
+nnoremap <Leader>ja :CtrlP app<CR>
+nnoremap <Leader>jl :CtrlP lib<CR>
+nnoremap <Leader>jn :CtrlP models<CR>
+nnoremap <Leader>jv :CtrlP app/views<CR>
+nnoremap <Leader>jm :CtrlP app/models<CR>
+nnoremap <Leader>jc :CtrjP app/controllers<CR>
+nnoremap <Leader>ji :CtrlP app/assets/javascripts<CR>
+nnoremap <Leader>jy :CtrlP app/assets/stylesheets<CR>
 nnoremap <Leader>js :CtrlP spec<CR>
 nnoremap <Leader>jf :CtrlP features<CR>
-
